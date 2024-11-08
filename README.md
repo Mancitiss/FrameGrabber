@@ -6,6 +6,10 @@
 
 [Frame Grabber](https://framegrabberapp.com) is an app for iOS & iPadOS to extract full-resolution video frames as images — [framegrabberapp.com](https://framegrabberapp.com)
 
+
+> **Note**  
+> As of June 2023, Frame Grabber has been acquired and is published by its new owner. This repo remains open-source as it has since day one. It contains the code up to the latest version I published myself, 1.4.1.
+
 ## Reviews
 
 4.8 stars worldwide. Loved by users for its ease-of-use and intuitiveness.
@@ -24,6 +28,10 @@ Open-sourced to give everything I learned back to the community.
 
 [Read more](./docs/about.md) about why I made the app and some technical challenges along the way.
 
+> **Note**  
+> This was my very first app without prior experience. The code is not the newest. Please keep that in mind when checking out the code 😉 
+
+
 ## How to Build
 
 - Open Xcode
@@ -40,8 +48,6 @@ Overview of main components:
 - [`Scenes`](Frame%20Grabber/Scenes):The app's main screens
 - [`Packages`](Frame%20Grabber/Packages): Modules extracted so far
 
-> **Note**  
-> This was my very first app without prior experience. Keep that in mind when checking out the code 😉 
 
 ## License
 
