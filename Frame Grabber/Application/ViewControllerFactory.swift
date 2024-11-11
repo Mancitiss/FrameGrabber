@@ -47,6 +47,19 @@ import Utility
         controller.delegate = delegate
         return navigationController
     }
+
+    static func makeTest(withDelegate delegate: TestViewControllerDelegate?) -> UIViewController {
+        let storyboard = UIStoryboard(name: "Test", bundle: nil)
+        
+        guard let navigationController = storyboard.instantiateInitialViewController() as? UINavigationController,
+              let controller = navigationController.topViewController as? TestViewController
+        else {
+            fatalError("Could not instantiate controller.")
+        }
+        
+        controller.delegate = delegate
+        return navigationController
+    }
     
     static func makePurchase() -> UIViewController {
         let storyboard = UIStoryboard(name: "Purchase", bundle: nil)

@@ -133,6 +133,11 @@ import UIKit
         let purchase = ViewControllerFactory.makePurchase()
         navigationController.showDetailViewController(purchase, sender: self)
     }
+
+    private func showTest() {
+        let test = ViewControllerFactory.makeTest(withDelegate: self)
+        navigationController.showDetailViewController(test, sender: self)
+    }
 }
 
 // MARK: - AboutViewControllerDelegate
@@ -175,6 +180,10 @@ extension Coordinator: LibraryViewController.Delegate {
     
     func controllerDidSelectAbout(_ controller: LibraryViewController) {
         showAbout()
+    }
+
+    func controllerDidSelectTest(_ controller: LibraryViewController) {
+        showTest()
     }
 }
 
@@ -249,4 +258,8 @@ extension Coordinator: UIImagePickerController.Delegate {
             completion: nil
         )
     }
+}
+
+extension Coordinator: TestViewControllerDelegate {
+    
 }

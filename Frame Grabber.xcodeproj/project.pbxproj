@@ -131,6 +131,8 @@
 		00F3C255213046CD0030B7EC /* AlbumListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F3C254213046CD0030B7EC /* AlbumListHeader.swift */; };
 		00FA916025C934B1007EB7DC /* PhotoLibraryMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FA915F25C934B1007EB7DC /* PhotoLibraryMetadata.swift */; };
 		00FA916625C934E9007EB7DC /* VideoSourceMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FA916525C934E9007EB7DC /* VideoSourceMetadata.swift */; };
+		1FDFF0542CE1E967000360D3 /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FDFF0532CE1E967000360D3 /* Test.storyboard */; };
+		1FDFF0562CE1EEE1000360D3 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDFF0552CE1EEE1000360D3 /* TestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -278,6 +280,8 @@
 		00F3C254213046CD0030B7EC /* AlbumListHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListHeader.swift; sourceTree = "<group>"; };
 		00FA915F25C934B1007EB7DC /* PhotoLibraryMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryMetadata.swift; sourceTree = "<group>"; };
 		00FA916525C934E9007EB7DC /* VideoSourceMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSourceMetadata.swift; sourceTree = "<group>"; };
+		1FDFF0532CE1E967000360D3 /* Test.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Test.storyboard; sourceTree = "<group>"; };
+		1FDFF0552CE1EEE1000360D3 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -553,6 +557,7 @@
 		00CB133625D2A2D100361581 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				1FDFF0502CE1E444000360D3 /* Test */,
 				00229DBB212E0B1A00848CE8 /* About */,
 				00A9DF5321273FA400778885 /* Album Picker */,
 				00AFE4FA202AEF01005E2AA8 /* Authorization */,
@@ -667,6 +672,15 @@
 			path = Metadata;
 			sourceTree = "<group>";
 		};
+		1FDFF0502CE1E444000360D3 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				1FDFF0532CE1E967000360D3 /* Test.storyboard */,
+				1FDFF0552CE1EEE1000360D3 /* TestViewController.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -767,6 +781,7 @@
 				00D9E83723426301009E7AFA /* Metadata.storyboard in Resources */,
 				0023FC8F23390D940046D9F8 /* About.storyboard in Resources */,
 				0023FC96233911B10046D9F8 /* Authorization.storyboard in Resources */,
+				1FDFF0542CE1E967000360D3 /* Test.storyboard in Resources */,
 				00A7B33628DFA62900B5369C /* Purchase.storyboard in Resources */,
 				00CA339025A200DE00DBD84D /* Album Picker.storyboard in Resources */,
 				000EA8B72437311700C339DE /* Editor.storyboard in Resources */,
@@ -805,6 +820,7 @@
 				00024F70234482EE00937941 /* LibraryGridMenu.swift in Sources */,
 				00AD72C124194107009D18BA /* AVPlayer.swift in Sources */,
 				001F7E4225CB49260075AFC2 /* VideoTimeFormatter.swift in Sources */,
+				1FDFF0562CE1EEE1000360D3 /* TestViewController.swift in Sources */,
 				00F3C255213046CD0030B7EC /* AlbumListHeader.swift in Sources */,
 				001A6C5120623B0000B91F3A /* ProgressView.swift in Sources */,
 				001F7DE525C9E91E0075AFC2 /* MetadataCell.swift in Sources */,

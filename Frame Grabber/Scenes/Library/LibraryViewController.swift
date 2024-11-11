@@ -11,6 +11,7 @@ import UIKit
     func controllerDidSelectAddMoreVideos(_ controller: LibraryViewController)
     func controllerDidSelectSettings(_ controller: LibraryViewController)
     func controllerDidSelectAbout(_ controller: LibraryViewController)
+    func controllerDidSelectTest(_ controller: LibraryViewController)
 }
 
 final class LibraryViewController: UIViewController {
@@ -88,6 +89,10 @@ final class LibraryViewController: UIViewController {
     
     @IBAction func showAbout() {
         delegate?.controllerDidSelectAbout(self)
+    }
+    
+    @IBAction func showTest() {
+        delegate?.controllerDidSelectTest(self)
     }
     
     // MARK: Configuring
