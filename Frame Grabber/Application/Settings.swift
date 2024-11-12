@@ -31,14 +31,14 @@ extension UserDefaults {
         set { set(newValue, forKey: Key.includeMetadata) }
     }
 
-    /// When setting or getting an unsupported format, sets or gets a fallback format (jpeg).
+    /// When setting or getting an unsupported format, sets or gets a fallback format (png).
     var imageFormat: ImageFormat {
-        get { (decodedValue(forKey: Key.imageFormat) ?? ImageFormat.jpeg).fallbackFormat }
+        get { (decodedValue(forKey: Key.imageFormat) ?? ImageFormat.png).fallbackFormat } // changed default from jpeg to png
         set { setEncodedValue(newValue.fallbackFormat, forKey: Key.imageFormat) }
     }
 
     var compressionQuality: Double {
-        get { (object(forKey: Key.compressionQuality) as? Double) ?? 0.95 }
+        get { (object(forKey: Key.compressionQuality) as? Double) ?? 1.00 } // changed default from 0.95 to 1.00
         set { set(newValue, forKey: Key.compressionQuality) }
     }
     
