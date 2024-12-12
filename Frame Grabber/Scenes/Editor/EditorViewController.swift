@@ -314,7 +314,10 @@ final class EditorViewController: UIViewController {
 // MARK: - EditorToolbarControllerDelegate
 
 extension EditorViewController: EditorToolbarControllerDelegate {
- 
+    var videoURL: URL? {
+        return self.videoController.videoURL
+    }
+
     func controller(_ controller: EditorToolbarController, didSelectShareFrameAt time: CMTime) {
         generateFramesAndShare(for: [time])
     }

@@ -2,8 +2,11 @@ import AVFoundation
 import Combine
 import ThumbnailSlider
 import UIKit
+import Photos
+import ffmpegkit
 
 protocol EditorToolbarControllerDelegate: AnyObject {
+    var videoURL: URL? { get }
     func controller(_ controller: EditorToolbarController, didSelectShareFrameAt time: CMTime)
 }
 

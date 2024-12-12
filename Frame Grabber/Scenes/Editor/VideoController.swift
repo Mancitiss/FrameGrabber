@@ -17,6 +17,7 @@ class VideoController {
     typealias VideoResult = Result<AVAsset, Error?>
 
     let source: VideoSource
+    private(set) var videoURL: URL?
     private(set) var video: AVAsset?
     private(set) var previewImage: UIImage?
 
@@ -220,6 +221,11 @@ class VideoController {
         ) { [weak self] video, _, info in
             
             self?.video = video
+            print("checking video type")
+            if let urlAsset = video as? AVURLAsset {
+                self?.videoURL = urlAsset.url
+                print("Video is AVURLAsset")
+            }
             self?.videoRequest = nil
 
             if info.isCancelled {
